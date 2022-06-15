@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        Name: <input ng-model="firstname">
+        <h1>{{firstname}}</h1>
+        Name: <input ng-model="lastname">
+        <h1>{{lastname}}</h1>
+        <h1 ng-click="changeName()">{{firstname}}</h1>
+
+
+    </div>
+    
+    <script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+        $scope.firstname = "IRENE";
+        $scope.lastname = "IRINNAH";    
+    });
+   
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstname = "IRENE";
+    $scope.changeName = function() {
+        $scope.firstname = "IRINNAH";
+    }
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    alert("Background color = " + $("body").css("background-color"));
+  });
+});
+    </script>
+    
+    <p>Change the name inside the input field, and the model data will change automatically, and therefore also the header will change its value.</p>
+    <body style="background-color:#0000ff">This is a paragraph.</body>
+
+<button>Return background-color of body</button>
+
+</body>
+</html>
