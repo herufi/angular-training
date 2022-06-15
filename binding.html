@@ -46,31 +46,44 @@ app.controller('myCtrl', function($scope) {
 });
 $(document).ready(function(){
   $("button").click(function(){
-    alert("Background color = " + $("body").css("background-color"));
   });
 });
-    </script>
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1").toggle(1000);
+  });
+});
+</script>
+
+<button id="toggle">toggle button</button>
+
+<h1>Welcome to our home page. </h1>
+
+
+    
     <div id="flip">Click to slide the panel down or up</div>
     <div id="panel">fill up the details below</div><br><br>
     <div ng-app="myApp" ng-controller="myCtrl">
         Name: <input ng-model="firstname">
-        <h1>{{firstname}}</h1>
+        <h2>{{firstname}}</h2>
         Name: <input ng-model="lastname">
-        <h1>{{lastname}}</h1>
+        <h2>{{lastname}}</h2>
         Name: <input ng-model="email">
-        <h1>{{email}}</h1>
+        <h2>{{email}}</h2>
         Name: <input ng-model="phone">
-        <h1>{{phone}}</h1>
-        <h1 ng-click="changeName()">{{firstname}}</h1>
-        <h1 ng-click="changeName()">{{lastname}}</h1>
-        <h1 ng-click="changeName()">{{email}}</h1>
-        <h1 ng-click="changeName()">{{phone}}</h1>
+        <h2>{{phone}}</h2>
+        <h2 ng-click="changeName()">{{firstname}}</h2>
+        <h2 ng-click="changeName()">{{lastname}}</h2>
+        <h2 ng-click="changeName()">{{email}}</h2>
+        <h2 ng-click="changeName()">{{phone}}</h2>
 
 
 
     </div>
     
-    <p>Change the name inside the input field, and the model data will change automatically, and therefore also the header will change its value.</p>
+    <p>Change the name inside the input field, and the model data will change automatically, 
+      and therefore also the header will change its value.</p>
     <body style="background-color:#0000ff"></body>
 
 
