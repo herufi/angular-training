@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://media.istockphoto.com/vectors/blue-glow-neon-font-realistic-neon-explosion-letter-b-alphabet-of-vector-id1348302530?k=20&m=1348302530&s=612x612&w=0&h=UNrUj4yJaTJ0y3AycPDcjZ1oKr_bmvjCt6pF3oopSd4=" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <title>Big Launge</title>
+</head>
+
+<script src="https://kit.fontawesome.com/d89edf4aa2.js" crossorigin="anonymous"></script>
+
+<body>
+
+<div class="nav">
+    <ul>
+      <li><a href="index.html" class="nav-link"><i class="far fa-address-book"></i> home</a></li>
+    
+      <li><a href="menu.html" class="nav-link"><i class="far fa-address-book"></i> menu</a></li>
+    
+         <li><a href="contact.html" class="nav-link"><i class="fas fa-tasks"></i> contacts</a></li>
+        
+    </ul>
+    
+
+</div>
+
+    </div>
+
+    <div class="h1">
+        <h1 style="font-family:gothic;">Reserve a table, ask for today's special or just send us a message
+        </h1>
+    <div ng-app="myApp" ng-controller="formCtrl">
+        <form novalidate>
+          First Name:<br>
+          <input type="text" ng-model="fname"><br>
+          Last Name:<br>
+          <input type="text" ng-model="lname">
+          <br>
+          email:<br>
+          <input type="text" ng-model="email">
+          <br>
+          phone number:<br>
+          <input type="text" ng-model="num">
+          <br><br>
+         
+          <button ng-click="reset()">RESET</button>
+        </form>
+       
+      </div>
+      
+      <script>
+      var app = angular.module('myApp', []);
+      app.controller('formCtrl', function($scope) {
+          $scope.master = {firstName:"", lastName:""};
+          $scope.master = {lastname:"", lastname:""};
+          $scope.master = {email:"", email:""};
+          $scope.master = {phone:"", phone:""};
+
+          $scope.reset = function() {
+              $scope.user = angular.copy($scope.master);
+          };
+          $scope.reset();
+      });
+</script>
+</div>
+
+<div ng-app="">
+    <form>
+      
+     Make an order:
+
+      <input type="checkbox" ng-model="myVar">
+      Today's special:
+
+      <input type="checkbox" ng-model="myVar">
+      Reserve a table:
+
+      <input type="checkbox" ng-model="myVar"><br><br>
+      <input type="submit" value="Submit">
+
+    </form>
+    
+  </div>
+  
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+<div class="footer">
+    <div class="h1">  
+        <h1>link up with us</h1>
+    </div>
+    
+        <ul>
+          <li><a href="irenewaweru9@gmail.com">irenewaweru9@gmail.com</a><br><br></li>
+          
+          <li><a href="0711791575">0711791575</a><br><br></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a><br><br></li>
+          <li><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a><br><br></li>
+          <li><a href="https://www.whatsapp.com/?lang=en"><i class="fab fa-whatsapp"></i></a><br><br></li>
+          </ul>
+
+</div>
+
+</body>
+</html>

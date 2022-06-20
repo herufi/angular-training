@@ -1,0 +1,78 @@
+body{
+     
+
+  background-image: url('https://assets.site-static.com/userFiles/805/image/mexican-food-restaurants-in-alexandria.jpg');
+  background-position-x: center;
+  background-size: cover;
+  }
+
+ 
+    nav{
+        text-align:bottom;
+        
+    }
+    li {
+  float: left;
+}
+
+
+    ul {
+        list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+li a {
+  display: block;
+  color: rgb(69, 36, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  text-align: center;  
+  color:rgb(16, 25, 187);
+}
+h2{
+  text-align: center;  
+  color:red;
+}
+
+* {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(7, 6, 6);
+  color: white;
+  text-align: center;
+}
